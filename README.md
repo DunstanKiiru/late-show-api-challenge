@@ -9,13 +9,16 @@
 - Note the database connection URL (e.g., `postgresql://user:password@localhost:5432/dbname`).
 
 ### Flask and Environment Variables
+
 - Install Python 3.8+ and pip.
 - Install dependencies using Pipenv or pip:
+
   ```bash
   pipenv install
   # or
   pip install -r requirements.txt
   ```
+
 - Create a `.env` file in the project root with the following variables:
   ```
   DATABASE_URL=your_postgresql_database_url
