@@ -3,6 +3,7 @@
 ## Setup Instructions
 
 ### PostgreSQL
+
 - Install PostgreSQL and ensure it is running.
 - Create a database for the application.
 - Note the database connection URL (e.g., `postgresql://user:password@localhost:5432/dbname`).
