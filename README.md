@@ -21,11 +21,8 @@
 
 - Create a `.env` file in the project root with the following variables:
   
-  ```
-
   DATABASE_URL=your_postgresql_database_url
   JWT_SECRET_KEY=your_jwt_secret_key
-  ```
 
 ## How to Run
 
@@ -107,10 +104,7 @@
 
 - Include the JWT token in the `Authorization` header for protected routes:
 
-```
-
   Authorization: Bearer your_jwt_token
-  ```
 
 ## Route List and Sample Requests/Responses
 
