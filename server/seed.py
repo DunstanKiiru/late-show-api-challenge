@@ -31,7 +31,7 @@ def seed_data():
     episodes = []
     for i in range(1, 6):
         episode = Episode(
-            date=fake.date_this_year().isoformat(),
+            date=fake.date_this_year(),
             number=100 + i
         )
         episodes.append(episode)
