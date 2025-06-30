@@ -1,5 +1,7 @@
 from faker import Faker
 import random
+from datetime import datetime
+
 from server.app import create_app
 from server.models import db
 from server.models.user import User
@@ -26,8 +28,9 @@ def seed_data():
             occupation=fake.job()
         )
         guests.append(guest)
-    db.session.add_all(guests)
 
+    db.session.add_all(guests)
+    db.session.commit()
     episodes = []
     for i in range(1, 6):
         episode = Episode(
@@ -35,9 +38,9 @@ def seed_data():
             number=100 + i
         )
         episodes.append(episode)
-    db.session.add_all(episodes)
-    db.session.commit()
 
+    db.session.add_all(episodes)
+    db.session.commit() 
     appearances = []
     for _ in range(8):
         appearance = Appearance(

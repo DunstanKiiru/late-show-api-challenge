@@ -47,7 +47,8 @@
 - Seed the database with initial data:
 
   ```bash
-  python server/seed.py
+  python -m server.seed
+
   ```
 
 ### Running the Application
